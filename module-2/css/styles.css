@@ -1,0 +1,79 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:cursive;
+  box-sizing:border-box;
+}
+
+header{
+  text-align:center;
+  margin-top:2rem;
+  margin-bottom:4rem;
+  font-size:2rem;
+}
+ 
+#h2{ 
+height:auto;
+width:50%;
+text-align:center;
+position:absolute;
+top:0;
+right:0;
+border:1px black solid;
+border-top:none;
+border-right:none;
+}
+
+.tbbt h2{
+background-color:cadetblue;
+}
+
+.friends h2{
+  background-color:salmon;
+}
+
+.brook h2{
+  background-color:gold;
+}
+
+p{
+  position:relative;
+  top:1rem;
+  display:block;
+  clear:right;
+}
+
+#box{
+  position:relative;
+  border:1px solid black;
+  font-size:12px;
+  background:linear-gradient(35deg,ivory,silver,lightslategrey);
+  padding:1.5rem;
+  margin:1rem;
+}
+
+.grid{
+  display:grid;
+  position:relative;
+  grid-template-columns:1fr 1fr 1fr; 
+}
+
+@media(max-width:991px) and (min-width:768px)
+{
+  .grid{
+   grid-template-columns:1fr 1fr;
+   grid-template-rows:1fr 1fr;
+  }
+  
+  .brook{
+   display:grid;
+   grid-column:1/3;
+   }
+}
+
+@media(max-width:767px)
+{
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
